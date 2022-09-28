@@ -1,5 +1,11 @@
 terraform {
   required_version = ">= 0.13.1"
+  backend "s3" {
+        region = "us-east-1"
+        profile = "default"
+        key = "terraformstatefile"
+        bucket = "tf-state-poc-storage"
+    }
 
   required_providers {
     aws = {
