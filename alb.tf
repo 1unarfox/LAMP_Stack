@@ -30,6 +30,7 @@ resource "aws_lb" "lb" {
   load_balancer_type = "application"
   security_groups    = [aws_security_group.sg.id, ]
   subnets            = aws_subnet.public_subnet.*.id
+  enable_cross_zone_load_balancing = true
 }
 
 ####################################################
