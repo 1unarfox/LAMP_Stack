@@ -19,4 +19,9 @@ variable "region" {
   description = "Target region of your LAMP stack deployment."
 }
 
+variable "ami_id" {
+  default = "ami-026b57f3c383c2eec"
+  description = "AMI ID of the image you'd like to use."
+}
+
 variable "gitlab_token" {}
