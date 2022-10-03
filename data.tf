@@ -1,4 +1,4 @@
-data "aws_ami" "red_hat" {
+data "aws_ami" "az_linux" {
 most_recent = true
 provider = aws
 owners = ["137112412989"] # Canonical
