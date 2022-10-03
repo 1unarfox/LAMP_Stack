@@ -1,6 +1,6 @@
 resource "aws_instance" "instance" {
   count                = length(aws_subnet.public_subnet.*.id)
-  ami                  = data.aws_ami.az_linux
+  ami                  = var.ami_id
   instance_type        = var.instance_type
   subnet_id            = element(aws_subnet.public_subnet.*.id, count.index)
   security_groups      = [aws_security_group.sg.id, ]
