@@ -5,7 +5,7 @@ variable "instance_type" {
 }
 
 variable "key_name" {
-  default = ""
+  default = "lamp_test"
   description = "Name of the EC2 instance key pair you wish to use"
 }
 
