@@ -5,7 +5,6 @@
 #############################################
 resource "aws_vpc" "lamp_vpc" {
   cidr_block           = var.vpc_cidr
-  instance_tenancy     = var.instance_tenancy
   enable_dns_support   = true
   enable_dns_hostnames = true
 }
