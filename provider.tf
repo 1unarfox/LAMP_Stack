@@ -4,7 +4,7 @@ terraform {
         region = "us-east-1"
         profile = "default"
         key = "terraformstatefile"
-        bucket = "tf-state-poc-storage"
+        bucket = var.state_bucket
     }
 
   required_providers {

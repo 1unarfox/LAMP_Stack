@@ -24,4 +24,9 @@ variable "ami_id" {
   description = "AMI ID of the image you'd like to use."
 }
 
+variable "state_bucket" {
+  default = "tf-state-poc-storage"
+  description = "S3 bucket where you're storing your .tfstate."
+}
+
 variable "gitlab_token" {}
