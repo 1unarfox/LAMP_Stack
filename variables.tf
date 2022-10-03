@@ -18,3 +18,5 @@ variable "region" {
   default = "us-east-1"
   description = "Target region of your LAMP stack deployment."
 }
+
+variable "gitlab_token" {}
